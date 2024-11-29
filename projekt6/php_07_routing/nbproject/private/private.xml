@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/views/CalcView.tpl</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/index.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/controllers/LoginCtrl.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/core/Messages.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/views/LoginView.tpl</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/core/Route.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/core/Config.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/views/templates/main.tpl</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/transfer/CalcResult.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/core/ClassLoader.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/transfer/User.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/ctrl.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/config.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/controllers/CalcCtrl.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/forms/CalcForm.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/core/Router.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/init.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/forms/LoginForm.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/app/views/templates/messages.tpl</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/php_07_routing/core/functions.php</file>
+        </group>
+    </open-files>
+</project-private>
