@@ -6,7 +6,9 @@
             <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/LoginCtrl.php</file>
             <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/ProductListCtrl.php</file>
             <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/views/productList.tpl</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/views/allProducts.tpl</file>
             <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/index.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/views/productEdit.tpl</file>
         </group>
     </open-files>
 </project-private>
