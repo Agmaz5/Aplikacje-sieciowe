@@ -14,7 +14,7 @@ $conf->action_root = $conf->app_root.'/ctrl.php?action=';
 // konfiguracja bazy danych (wymagane)
 $conf->db_type = 'mysql';
 $conf->db_server = 'localhost';
-$conf->db_name = 'craftsy';  // Zmienione na nazwę naszej bazy danych
+$conf->db_name = 'craftsy'; 
 $conf->db_user = 'root';
 $conf->db_pass = '';
 $conf->db_charset = 'utf8';

@@ -35,8 +35,6 @@ class ProductEditCtrl {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Get the POST data from the form
             $idProduct = isset($_POST['id']) ? $_POST['id'] : "null";
-            echo $idProduct;
-                        echo "test";
 
             $productName = isset($_POST['name']) ? $_POST['name'] : null;
             $price = isset($_POST['price']) ? $_POST['price'] : null;
@@ -97,7 +95,6 @@ if (isset($_POST['edition']) && isset($_POST['productId'])) {
 // In the file where you're handling the form submission or other action
 if (isset($_POST['save'])) {
     
-    echo 'test1';
     
     // Ensure $conf is available here too
     $productEditCtrl = new ProductEditCtrl();

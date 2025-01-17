@@ -16,7 +16,7 @@ getRouter()->setLoginRoute('login'); // akcja/ścieżka na potrzeby logowania (p
 
 // Dodajemy trasy dla kontrolerów
 
-getRouter()->addRoute('loginShow',          'LoginCtrl'); // Wyświetlenie logowania
+getRouter()->addRoute('loginShow',          'LoginCtrl', 'action_login'); // Wyświetlenie logowania
 getRouter()->addRoute('login',              'LoginCtrl'); // Akcja logowania
 getRouter()->addRoute('logout',             'LoginCtrl'); // Akcja wylogowania
 getRouter()->addRoute('productNew',         'ProductAddEditCtrl');  // ['user', 'admin']); // Dodawanie nowego produktu
@@ -82,15 +82,5 @@ if ($controller && $method) {
     if (class_exists($class) && method_exists($class, $method)) {
         $instance = new $class();
         $instance->$method(); // Wywołanie metody
-    } else {
-        echo "Controller or method not found! <br>";
-        echo "<br>";
-        echo "kontroler sprawdzany " . $controller;
-                echo "<br>";
-        echo "methoda sprawdzana " . $method;
-
-
-    }
-} else {
-    echo "No controller or method specified!";
-}
+    } 
+} 

@@ -4,70 +4,117 @@ namespace app\controllers;
 
 class LoginCtrl {
     private $db;
+    private $login;
+    private $password;
 
     public function __construct() {
         // Pobierz połączenie do bazy danych
         $this->db = getDB();
     }
+    
+    
+    public function action_loginDisplay() {
+        // Pobierz dane z formularza
+
+        $smarty = getSmarty();
+            
+            // Render the template
+        
+            $smarty->display('loginShow.tpl');
+            exit();
+    }
+    
+ 
 
     public function action_login() {
         // Pobierz dane z formularza
-        $username = trim($_POST['username'] ?? '');
-        $password = trim($_POST['password'] ?? '');
 
+        
+        $username = isset($_POST['username']) ? $_POST['username'] : null;
+        $password = isset($_POST['password']) ? $_POST['password'] : null;
+
+
+        
         // Sprawdź, czy wprowadzono dane
         if (!$username || !$password) {
             $this->redirectWithError("Login and password are required.");
             return;
         }
 
-        // Wyszukaj użytkownika w bazie danych
-        $user = $this->db->get("users", ["id", "username", "password_hash"], [
-            "username" => $username
-        ]);
+$idDB = null;
+$passwordDB = null;
+$idroleDB = null;
+        
+$user = $this->db->get("users", ["idUser", "password", "idRole"], [
+    "username" => $username
+]);
 
-        // Sprawdź, czy użytkownik istnieje i hasło jest poprawne
-        if ($user && password_verify($password, $user['password_hash'])) {
-            // Zaloguj użytkownika
-            session_start();
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['username'] = $user['username'];
+if ($user) {
+    $idDB = $user['idUser'];
+    $passwordDB = $user['password'];
+    $idroleDB = $user['idRole'];
 
-            // Przekierowanie na stronę główną lub dashboard
-            header("Location: " . getConf()->app_url . "/dashboard");
-        } else {
-            // Błąd logowania
-            $this->redirectWithError("Invalid username or password.");
-        }
+} 
+
+
+if ($password == $passwordDB) {
+    session_start();
+    $_SESSION['user_id'] = $idDB;
+    $_SESSION['username'] = $username;
+        $_SESSION['idRole'] = $idroleDB;
+
+    header("Location: " . getConf()->app_url . "/index.php");
+} else {
+    $this->redirectWithError("Invalid username or password.");
+}
+
     }
 
     public function action_logout() {
         // Zakończ sesję użytkownika
+        
+        
+        
         session_start();
         session_destroy();
 
+        
         // Przekierowanie na stronę logowania
-        header("Location: " . getConf()->app_url . "/loginShow");
+        header("Location: " . getConf()->app_url . "/index.php");
     }
 
     private function redirectWithError($message) {
         // Zapisz wiadomość błędu do sesji
-        session_start();
+        
+        //session_start();
         $_SESSION['error'] = $message;
 
         // Przekierowanie na stronę logowania
-        header("Location: " . getConf()->app_url . "/loginShow");
+                $smarty = getSmarty();
+
+                    exit();
     }
 }
 
 
 if (isset($_POST['login'])) {
     
-    echo "test";
     
     // Ensure $conf is available here too
-    //$productEditCtrl = new LoginCtrl();
-    //$productEditCtrl->action_login();  // Call action_productSave from the controller
+    $loginCtrl = new LoginCtrl();
+    $loginCtrl->action_loginDisplay();  // Call action_productSave from the controller
     
-    //exit();
+    exit();
+}
+
+
+
+if (isset($_POST['logout'])) {
+    
+    
+    // Ensure $conf is available here too
+    $loginCtrl = new LoginCtrl();
+    $loginCtrl->action_logout();  // Call action_productSave from the controller
+    
+    exit();
 }

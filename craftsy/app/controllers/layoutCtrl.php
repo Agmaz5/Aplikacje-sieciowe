@@ -1,12 +1,15 @@
 <?php
 namespace app\controllers;
 
+
 class LayoutCtrl {
 
+    
     // Konstruktor kontrolera
     public function __construct() {
         // Inicjalizuj zmienne lub dane, które będą dostępne w szablonie
         $this->conf = $this->getConf();  // Pobierz konfigurację (np. role, dane konfiguracyjne)
+        
     }
 
     // Metoda do pobierania konfiguracji
@@ -23,10 +26,14 @@ class LayoutCtrl {
     public function execute() {
         $smarty = getSmarty();
         
+        
+        
         // Przekazywanie danych do szablonu
         $smarty->assign('conf', $this->conf);
         
         // Wyświetlanie szablonu layout.tpl
         $smarty->display('layout.tpl');
+        
+        exit();
     }
 }

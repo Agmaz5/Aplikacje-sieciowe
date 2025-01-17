@@ -12,12 +12,3 @@ require_once 'app/controllers/LayoutCtrl.php';
 
 require_once 'app/controllers/LoginCtrl.php';
 
-
-// Utwórz nowy obiekt kontrolera
-$layoutCtrl = new \app\controllers\LayoutCtrl();
-$edit = new \app\controllers\ProductEditCtrl();
-
-
-// Uruchom kontroler
-$layoutCtrl->execute();
-

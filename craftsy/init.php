@@ -101,6 +101,7 @@ function &getSmarty(){
 }
 
 require_once 'app/controllers/ProductEditCtrl.php';
+require_once 'app/controllers/LoginCtrl.php';
 
 
 spl_autoload_register('autoload');
