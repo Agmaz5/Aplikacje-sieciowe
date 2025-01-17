@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/lib/smarty/sysplugins/smarty_internal_template.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/core/Config.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/templates_c/e7b9f739a599662101627a7a63e3e345d0e30a57_0.file.productList.tpl.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/core/Route.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/index.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/views/layout.tpl</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/core/Messages.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/core/functions.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/ProductController.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/ctrl.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/config.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/layoutCtrl.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/lib/smarty/sysplugins/smartycompilerexception.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/init.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/Medoo.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/views/productList.tpl</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/PersonListCtrl.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/forms/LoginForm.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/core/Router.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/ProductListCtrl.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/forms/PersonEditForm.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/ProductAddEditCtrl.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/controllers/userController.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/core/ClassLoader.class.php</file>
+            <file>file:/D:/Instalki/XAMPP/htdocs/craftsy/app/forms/PersonSearchForm.class.php</file>
+        </group>
+    </open-files>
+</project-private>
