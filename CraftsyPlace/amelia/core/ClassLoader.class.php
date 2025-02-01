@@ -13,6 +13,7 @@ class ClassLoader {
     private $config = null;
 
     public function __construct(&$config) {
+        
         if (!(isset($config) && $config instanceof Config)) {
             throw new \Exception('Configuration missing or incorrect');
         }
@@ -21,7 +22,7 @@ class ClassLoader {
             $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
             $fileName = $this->config->root_path . DIRECTORY_SEPARATOR . $class . '.class.php';
             if (is_readable($fileName)) {
-                require_once $fileName;
+                require_once $fileName;               
             }
         });
     }
